@@ -1,0 +1,8 @@
+<% flash.each do |key, val| %>
+    <%= "#{val}" %> </br>
+<% end %>
+
+<% @kittens.each do |item| %>
+    <%= item.name %>
+    <%= link_to "Delete", item, method: :delete %> </br>
+<% end %>
